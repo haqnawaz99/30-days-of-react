@@ -21,11 +21,10 @@ const Country = ({ country: { name, city } }) => {
 
 // countries component
 const Countries = ({ countries }) => {
-  const countryList = countries.map((country) => (
-    <Country key={country.name} country={country} />
-  ));
+  const countryList = countries.map((country) => <Country country={country} />);
   return <div>{countryList}</div>;
 };
+// App component
 const App = () => (
   <div className="container">
     <div>
